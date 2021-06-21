@@ -1,0 +1,65 @@
+.text-left{
+    text-align: left;
+    border: 1px solid black;
+}
+.text-right{
+    text-align: right;
+    border: 1px solid black;
+}
+td:hover{
+    background-color: #fcf6f6;
+    cursor: pointer;
+    color: #1e9dba
+}
+table{
+    border: 1px solid black;
+    width: 100%;
+}
+table th{
+    border: 1px solid black;
+    padding: 5px;
+}
+table td{
+    padding: 5px
+}
+.search-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-field{
+    width: 25%;
+    padding: 10px;
+}
+.table-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.fields{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+}
+.form-input{
+    padding: 5px 4px;
+}
+.btn-new{
+    padding: 11px 15px;
+    cursor: pointer;
+    background-color: green;
+    color: #ffff;
+    margin: 10px 0px;
+    margin-left: 100px;
+}
+.btn-new-export{
+    padding: 11px 15px;
+    cursor: pointer;
+    background-color: blue;
+    color: #ffff;
+    margin: 10px 0px;
+    margin-left: 100px;
+}

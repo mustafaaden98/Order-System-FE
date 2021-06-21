@@ -1,0 +1,75 @@
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 13;
+}
+.modal-window{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal-header{
+    min-height: 42px;
+    border-bottom: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    background: #313131;
+    color: white;
+    /* padding: 0px 10px; */
+}
+.modal-title{
+    margin-left: 10px;
+}
+.modal-body {
+    overflow: auto;
+    border-bottom: 1px solid #eee;
+}
+.btn-fragment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+.btn-fragment-create{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+}
+.btn-save{
+    padding: 11px 15px;
+    cursor: pointer;
+    background-color: green;
+    color: #fff;
+    margin: 10px 0px;
+}
+.btn-disabled {
+    padding: 11px 15px;
+    pointer-events: none;
+    background-color: rgba(195, 195, 195, 0.3);
+    color: rgba(16, 16, 16, 0.3);
+    margin: 10px 0px;
+}
+.btn-details{
+    padding: 11px 15px;
+    cursor: pointer;
+    background-color: #e72a2a;
+    color: #fff;
+    margin: 10px 0px;
+}
+.modal-body{
+    max-height: 400px;
+}

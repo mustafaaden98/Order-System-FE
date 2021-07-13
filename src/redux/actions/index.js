@@ -32,31 +32,6 @@ export const getOrders = () => (dispatch) => {
     })
 }
 
-// export const createOrder = (orderObj, items) => (dispatch) => {
-//     console.log("orderObj: " + orderObj);
-//     console.log("items", items);
-//     const {customerName, customerAddress, orderDate,grossOrderAmount,shippingTax,totalTax,shipDate,totalOrderAmount} = orderObj;
-//     return new Promise((resolve, reject) => {
-//         axios.post(url,{
-//             query: `
-//                 mutation{
-//                     addOrder(customerName:"${customerName}", customerAddress: "${customerAddress}", 
-//                         orderDate:"${orderDate}", grossOrderAmount:${grossOrderAmount}, shippingTax:${shippingTax}, totalTax:${totalTax},
-//                         shipDate : "${shipDate}", totalOrderAmount:${totalOrderAmount}, itemsL : ${items}){
-//                         customerName
-//                       }
-//                 }
-//             `
-//         } ).then(response => {
-//             dispatch({
-//                 type : CREATE_ORDER,
-//                 payload: response.data.data.getItems
-//             });
-//             resolve(response);
-//         })
-//     })
-// }
-
 export const createOrder = (orderObj, items) => (dispatch) => {
 
     const {customerName, customerAddress, orderDate,grossOrderAmount,shippingTax,totalTax,shipDate,totalOrderAmount} = orderObj;

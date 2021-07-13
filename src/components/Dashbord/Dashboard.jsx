@@ -108,6 +108,7 @@ export const Dashboard = () => {
     const { data } = await dispatch(deleteOrder(item.id));
     setOrdersList(data.data.deleteOrder);
   };
+  
   const data = orders;
   const fileName = "orders";
   const exportType = "xls";
